@@ -1,0 +1,106 @@
+.Main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid black; */
+}
+.MaintaskList {
+  /* border: 2px solid black; */
+  display: flex;
+  width: 100%;
+  padding: 5px;
+  background-image: linear-gradient(#2c3e50, #4ca1af);
+  color: wheat;
+  margin: 5px;
+  border-radius: 5px;
+}
+.MaintaskList:hover {
+  background-image: linear-gradient(#ff5f6d, #ffc371);
+}
+
+.dltButton {
+  border: none;
+  /* background-color: brown; */
+  cursor: pointer;
+  background-image: linear-gradient(#ee0979, #ff6a00);
+  margin-left: 25px;
+  padding: 5px;
+  border-radius: 5px;
+  width: 65px;
+  color: wheat;
+}
+
+.updButton {
+  border: none;
+  /* background-color: blue; */
+  background-image: linear-gradient(#4ecdc4, #556270);
+  margin-left: 25px;
+  padding: 5px;
+  border-radius: 5px;
+  width: 65px;
+  color: wheat;
+  cursor: pointer;
+}
+
+h2 {
+  position: relative;
+  padding: 1rem 2rem;
+  width: 100%;
+  font-family: serif;
+}
+
+h2:before,
+h2:after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  content: "";
+}
+
+h2:before {
+  top: 6px;
+}
+
+h2:after {
+  bottom: 6px;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .MaintaskList {
+    /* border: 2px solid black; */
+    width: 80%;
+    padding: 5px;
+    background-image: linear-gradient(#2c3e50, #4ca1af);
+    color: wheat;
+  }
+  .dltButton {
+    border: none;
+    /* background-color: brown; */
+    cursor: pointer;
+    background-image: linear-gradient(#ee0979, #ff6a00);
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 65px;
+    color: wheat;
+  }
+
+  .updButton {
+    border: none;
+    /* background-color: blue; */
+    background-image: linear-gradient(#4ecdc4, #556270);
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 65px;
+    color: wheat;
+    cursor: pointer;
+  }
+  h2 {
+    position: relative;
+    padding: 1rem 2rem;
+    border: 4px solid #ff8989;
+    width: 80%;
+    font-family: serif;
+  }
+}
